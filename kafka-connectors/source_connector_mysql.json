@@ -1,0 +1,19 @@
+{
+  "name": "mysql-connector",
+  "config": {
+    "connector.class": "io.debezium.connector.mysql.MySqlConnector",
+    "database.hostname": "mysql",
+    "database.port": "3306",
+    "database.user": "admin",
+    "database.password": "admin",
+    "database.dbname": "mysqldb",
+    "table.include.list": "usuario",
+    "topic.prefix": "mysql",
+    "database.server.id": "1",
+    "database.history.skip.unparseable.ddl": "true",
+    "database.history.kafka.bootstrap.servers": "broker:9092",
+    "database.history.kafka.topic": "MYSQL.usuario",
+    "schema.history.internal.kafka.topic": "usuario_history",
+    "schema.history.internal.kafka.bootstrap.servers": "broker:9092"
+  }
+}
