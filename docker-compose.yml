@@ -19,7 +19,7 @@ services:
     image: mcr.microsoft.com/mssql/server:2019-latest
     container_name: sqlserver
     environment:
-      SA_PASSWORD: admin
+      SA_PASSWORD: Admin20@
       ACCEPT_EULA: Y
     ports:
       - 1433:1433
